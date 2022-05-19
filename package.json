@@ -1,0 +1,38 @@
+{
+  "name": "apollo-front-end",
+  "version": "1.0.0",
+  "description": "Front End T.P.’s Professional Detailing Development",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/normanplitz/apollo-front-end.git"
+  },
+  "keywords": [
+    "T.P.’s Professional Detailing",
+    "displays",
+    "distec"
+  ],
+  "author": "Norman Pleitez @ Ferocious Media",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://bitbucket.org/normanplitz/apollo-front-end/issues"
+  },
+  "homepage": "https://bitbucket.org/normanplitz/apollo-front-end#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-static-gzip": "^2.1.1",
+    "prerender-node": "^3.2.5"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.1",
+    "nodemon": "^2.0.12"
+  }
+}

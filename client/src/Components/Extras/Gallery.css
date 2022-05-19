@@ -1,0 +1,290 @@
+.gallery-slider .banner {
+    height: 380px;
+}
+
+.gallery-slider {
+    padding-bottom: 50px;
+}
+
+.projectwrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: 300px;
+    max-height: 350px;
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.pswp__bg {
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(3px);
+}
+
+.pswp__button:hover {
+    color: var(--primero);
+    background-color: transparent;
+    border: none;
+}
+
+.projectwrap picture {
+    position: relative;
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.projectwrap picture img {
+    position: relative;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hoverinfo {
+    position: absolute;
+    inset: 0;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    z-index: 2;
+    opacity: 0;
+    width: 100%;
+    transform: scale(0.95);
+    transition: all 0.5s ease-out;
+}
+
+.hoverinfo:hover {
+    background-color: rgba(0, 0, 0, 0.55);
+    opacity: 1;
+    inset: 0;
+    transform: scale(1);
+    transition: all 0.3s ease-in;
+}
+
+.hoverinfo h6 {
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.55);
+}
+
+.readmorebuttons {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 70%;
+}
+
+.readmorebuttons a {
+    animation: all 0.3s ease;
+    font-size: 14px;
+    margin: 5px 0;
+    padding-bottom: 3px;
+    width: auto;
+}
+
+.readmorebuttons a:hover {
+    animation: all 0.5s ease;
+    color: var(--secondary);
+}
+
+/* Dots and Numbers */
+
+.gallery-slider .slick-dots {
+    position: absolute;
+    display: flex !important;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: auto;
+    right: 130px;
+    bottom: 10px;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    z-index: 5;
+}
+
+.gallery-slider .slick-dots li button {
+    color: var(--segundo);
+    padding: 12px 15px;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: transparent;
+    border: none;
+    text-shadow: none;
+}
+
+.gallery-slider .slick-dots li button:hover {
+    color: var(--primero);
+    background-color: var(--segundo);
+}
+
+.gallery-slider .slick-active button {
+    color: var(--primero) !important;
+}
+
+/* Arrows */
+
+.gallery-slider .slick-arrow,
+.gallery-slider .slick-arrow:hover {
+    border: none !important;
+}
+
+.gallery-slider .slick-prev,
+.gallery-slider .slick-next {
+    font-size: 0;
+    top: auto;
+    line-height: 0;
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    transition: all 0.5s ease-out;
+}
+
+.gallery-slider .slick-prev:hover:before,
+.gallery-slider .slick-prev:focus:before,
+.gallery-slider .slick-next:hover:before,
+.gallery-slider .slick-next:focus:before {
+    opacity: 1;
+    color: var(--primero);
+}
+
+.gallery-slider .slick-prev.slick-disabled:before,
+.gallery-slider .slick-next.slick-disabled:before {
+    opacity: 0.25;
+}
+
+.gallery-slider .slick-prev {
+    bottom: 15px;
+    right: 80px;
+    left: auto;
+    padding: 20px;
+    z-index: 999;
+    transform: none;
+}
+
+.gallery-slider .slick-prev:before {
+    font-size: 30px !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: 'fm_awesome' !important;
+    content: '\f104' !important;
+    text-align: center;
+    color: #fff;
+    transform: translate(-50%, -50%);
+}
+
+.gallery-slider .slick-next {
+    bottom: 15px;
+    right: 40px;
+    left: auto;
+    padding: 20px;
+    z-index: 999;
+    transform: none;
+}
+
+.gallery-slider .slick-next:before {
+    font-size: 30px !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: 'fm_awesome' !important;
+    content: '\f105' !important;
+    text-align: center;
+    color: #fff;
+    transform: translate(-50%, -50%);
+}
+
+.gallery-slider .slick-prev:hover,
+.gallery-slider .slick-prev:focus,
+.gallery-slider .slick-next:hover,
+.gallery-slider .slick-next:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 1);
+    transition: all 0.3s ease-in;
+}
+
+.home-testimonials .slick-prev {
+    bottom: 5px;
+    right: auto;
+    left: 0;
+    padding: 20px;
+    z-index: 999;
+    transform: none;
+}
+
+.home-testimonials .slick-next {
+    bottom: 5px;
+    right: 0;
+    left: auto;
+    padding: 20px;
+    z-index: 999;
+    transform: none;
+}
+
+.home-testimonials .slick-prev:hover,
+.home-testimonials .slick-prev:focus,
+.home-testimonials .slick-next:hover,
+.home-testimonials .slick-next:focus {
+    outline: none;
+    background-color: var(--primero);
+    transition: all 0.3s ease-in;
+}
+
+.home-testimonials .slick-prev:before {
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    font-size: 40px !important;
+    text-align: center;
+    color: var(--primero) !important;
+}
+
+.home-testimonials .slick-next:before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px !important;
+    text-align: center;
+    color: var(--primero) !important;
+}
+
+.home-testimonials .slick-prev:hover:before,
+.home-testimonials .slick-prev:focus:before,
+.home-testimonials .slick-next:hover:before,
+.home-testimonials .slick-next:focus :before {
+    color: #fff !important;
+    transition: all 0.3s ease-in;
+}
+
+@media screen and (max-width: 600px) {
+    .gallery-slider .slick-dots li button {
+        padding: 15px 7px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .gallery-slider .slick-dots {
+        right: auto;
+        left: 50%;
+        width: 90%;
+        justify-content: center;
+        transform: translateX(-50%);
+    }
+}

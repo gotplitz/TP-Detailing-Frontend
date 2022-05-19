@@ -1,0 +1,95 @@
+.pricing-page {
+    position: relative;
+}
+
+.pricing-page section {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+
+.pricing-page h2 {
+    font-size: 46px;
+    margin-bottom: 30px;
+}
+
+.pp-content {
+    margin-bottom: 70px;
+}
+
+.pricing-page .button-container {
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.box-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-item svg {
+    font-size: 34px;
+    color: var(--primero);
+    margin-bottom: 30px;
+}
+
+.box-item h3 {
+    font-size: 38px;
+    color: var(--segundo);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.pm-content {
+    text-align: center;
+}
+
+.pm-content h4 {
+    font-size: 32px;
+    color: var(--primero);
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 859px) {
+    .pricing-page h2 {
+        font-size: 42px;
+    }
+
+    .box-item h3 {
+        font-size: 34px;
+    }
+
+    .pm-content h4 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .pricing-page h2 {
+        font-size: 36px;
+    }
+
+    .box-item h3 {
+        font-size: 32px;
+    }
+
+    .pm-content h4 {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .pricing-page h2 {
+        font-size: 30px;
+    }
+
+    .box-item h3 {
+        font-size: 28px;
+    }
+
+    .pm-content h4 {
+        font-size: 26px;
+    }
+}

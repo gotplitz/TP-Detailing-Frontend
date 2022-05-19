@@ -1,0 +1,100 @@
+/* ===================================
+  1. Service pages
+====================================== */
+.sp-block-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0px 40px;
+}
+
+.service-subtitle h2 {
+    font-size: 44px;
+    color: #fff;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.service-subtitle h2::before {
+    content: '';
+    display: block;
+    background-color: var(--primero);
+    height: 2px;
+    width: 160px;
+    position: absolute;
+    bottom: -5px;
+}
+
+.service-subtitle h2::after {
+    content: '';
+    display: block;
+    background-color: var(--primero);
+    height: 2px;
+    width: 80px;
+    position: absolute;
+    bottom: -15px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.services-block .image-container {
+    height: 100%;
+    max-width: 500px;
+    max-height: 700px !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.pink-block {
+    position: absolute;
+    height: 100%;
+    display: block;
+    right: 0;
+    width: 30vw;
+    background-color: var(--primero);
+}
+
+@media screen and (max-width: 959px) {
+    .pink-block {
+        bottom: 0;
+        height: 50%;
+        width: 50vw;
+    }
+
+    .service-subtitle h2 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .service-subtitle h2 {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .pink-block {
+        height: 500px;
+        width: 50vw;
+    }
+
+    .service-subtitle h2 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .pink-block {
+        height: 300px;
+    }
+
+    .service-subtitle h2 {
+        font-size: 28px;
+    }
+}

@@ -1,0 +1,134 @@
+/* ===================================
+  1. About us page
+====================================== */
+.about-intro .image-container {
+    position: relative;
+}
+
+.about-intro .image-container img {
+    position: relative;
+    z-index: 1;
+}
+
+.about-intro .image-container::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 150px;
+    width: 100%;
+    left: -15%;
+    bottom: -40px;
+    z-index: 0;
+    background-color: var(--primero);
+}
+
+.about-intro .hi-text h2 {
+    font-size: 44px;
+    color: #fff;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.about-intro .hi-text h2::before {
+    content: '';
+    display: block;
+    background-color: var(--primero);
+    height: 2px;
+    width: 160px;
+    position: absolute;
+    bottom: -5px;
+}
+
+.about-intro .hi-text h2::after {
+    content: '';
+    display: block;
+    background-color: var(--primero);
+    height: 2px;
+    width: 80px;
+    position: absolute;
+    bottom: -15px;
+}
+
+@media screen and (max-width: 768px) {
+    .about-intro .hi-text h2 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-intro .hi-text h2 {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .about-intro .hi-text h2 {
+        font-size: 32px;
+    }
+}
+
+/* ===================================
+  2. Extra Boxes
+====================================== */
+.au-extrabox section {
+    padding-top: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.au-extrabox h3 {
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.au-extrabox h3::before {
+    content: '';
+    display: block;
+    background-color: var(--primero);
+    height: 2px;
+    width: 160px;
+    position: absolute;
+    bottom: -5px;
+}
+
+.au-extrabox h3::after {
+    content: '';
+    display: block;
+    background-color: var(--primero);
+    height: 2px;
+    width: 80px;
+    position: absolute;
+    bottom: -15px;
+}
+
+.au-extrabox .image-container {
+    max-height: 370px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.au-extrabox .image-container img {
+    object-fit: cover;
+    min-height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.au-extrabox .image-block {
+    position: relative;
+}
+
+.au-extrabox .image-block::before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 150px;
+    width: 100%;
+    right: -15%;
+    bottom: -40px;
+    z-index: 0;
+    background-color: var(--primero);
+}
