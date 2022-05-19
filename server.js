@@ -10,9 +10,7 @@ const app = express();
 const buildPath = path.join(__dirname, 'client', 'build');
 
 app.use(
-	require('prerender-node')
-		.set('prerenderToken', 'uoAo3hpSxOoutwUAmgNV')
-		.set('protocol', 'https')
+	require('prerender-node').set('prerenderToken', '').set('protocol', 'https')
 );
 
 app.use(cors());

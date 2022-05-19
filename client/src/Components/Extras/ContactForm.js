@@ -143,11 +143,7 @@ const ContactForm = () => {
 							</Alert>
 						</Fragment>
 					)}
-					<ReCAPTCHA
-						ref={recaptchaRef}
-						sitekey='6LfW35scAAAAAHq5SjbFeRKoopSvDVz-FqZi-ZUu'
-						onChange={onChange}
-					/>
+					<ReCAPTCHA ref={recaptchaRef} sitekey='' onChange={onChange} />
 				</Grid>
 				<Grid item xs={12}>
 					{sent && (
